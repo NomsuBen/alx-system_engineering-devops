@@ -28,3 +28,4 @@ The file hello will be in the working directory
 
 The file olleh will be in the working directory
 This 11-directories_permissions script adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
+This 12-directory_permissions script creates a directory called my_dir with permissions 751 in the working directory.
