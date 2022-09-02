@@ -13,3 +13,4 @@ Long format
 with user and group IDs displayed numerically
 
 And hidden files (starting with 
+This mkdir /tmp/my_first_directory script creates a directory named my_first_directory in the /tmp/ directory.
