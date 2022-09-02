@@ -21,3 +21,4 @@ This rm /tmp/my_first_directory/betty script Delete the file betty.
 The file betty is in /tmp/my_first_directory
 This rm -r /tmp/my_first_directory script Delete the directory my_first_directory that is in the /tmp directory.
 This 10-back script changes the working directory to the previous one.
+This 11-lists  lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
