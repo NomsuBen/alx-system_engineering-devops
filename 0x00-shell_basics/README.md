@@ -3,3 +3,4 @@ This 1-listit script displays the everything in the current director
 y
 This 2-bring_me_home script changes the working directory
 This 3-listfiles script display current directory contents in a long format
+This 4-listmorefiles script display current directory contents, including hidden files (starting with .). Use the long format
