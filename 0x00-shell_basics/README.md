@@ -19,3 +19,4 @@ This rm /tmp/my_first_directory/betty script Delete the file betty.
 
 
 The file betty is in /tmp/my_first_directory
+This rm -r /tmp/my_first_directory script Delete the directory my_first_directory that is in the /tmp directory.
