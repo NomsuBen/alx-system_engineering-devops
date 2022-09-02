@@ -36,3 +36,4 @@ This 13-change_group script changes the group owner to school for the file hello
 The file hello will be in the working directory
 This 100-change_owner_and_group changes the owner to vincent and the group owner to staff for all the files and directories in the working directory
 This 101-symbolic_link_permissions changes the owner and the group owner of _hello to vincent and staff respectively.
+This chown --from=guillaume betty hello changes the owner of the file hello to betty only if it is owned by the user guillaume.
