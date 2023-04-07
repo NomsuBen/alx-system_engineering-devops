@@ -33,18 +33,14 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend villlageofgold-frontend-http
-        bind *:80
-        mode http
-	http-request set-header X-Forwarded-Proto http
-        default_backend villlageofgold-backend
+frontend villlageofgold.tech
+        bind 0:80
+        bind 0:443 ssl crt /etc/ssl/private/villlageofgold.tech.tech.pem
+        http-request redirect scheme https code 301 unless { ssl_fc }
+        option forwardfor
+        default_backend villlageofgold.tech_backend
 
-frontend villlageofgold-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.villlageofgold.tech.pem
-	http-request set-header X-Forwarded-Proto https
-	default_backend villlageofgold-backend
-
-backend villlageofgold-backend
+backend villlageofgold.tech_backend
         balance roundrobin
         server 108925-web-01 54.157.156.30:80 check
         server 108925-web-02 100.25.146.12:80 check
